@@ -2,6 +2,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Signin from './src/pages/signin'
+import SignUp from './src/pages/signup';
 import { LogBox } from 'react-native';
 
 LogBox.ignoreLogs([
@@ -13,7 +14,8 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Signin" component={Signin} />
+      <Stack.Screen name="SignIn" component={Signin} />
+      <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   );
 }
