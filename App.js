@@ -3,6 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Signin from './src/pages/signin'
 import SignUp from './src/pages/signup';
+import Home from './src/pages/home';
+
 import { LogBox } from 'react-native';
 
 LogBox.ignoreLogs([
@@ -16,6 +18,8 @@ function MyStack() {
     <Stack.Navigator>
       <Stack.Screen name="SignIn" component={Signin} />
       <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="Home" component={Home} />
+
     </Stack.Navigator>
   );
 }

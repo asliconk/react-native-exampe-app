@@ -22,7 +22,7 @@ export default function SignIn({ navigation }) {
           placeholderTextColor="#003f5c"
           secureTextEntry={true}
         />
-      </View><TouchableOpacity style={style.loginBtn}>
+      </View><TouchableOpacity onPress={() => navigation.navigate('Home')} style={style.loginBtn}>
         <Text style={style.loginText}>SIGN IN </Text>
       </TouchableOpacity>
       <Text style={style.Text}> If you don't have an account </Text>

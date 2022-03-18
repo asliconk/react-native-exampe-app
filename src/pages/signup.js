@@ -1,7 +1,7 @@
 import { TextInput, View, TouchableOpacity, StyleSheet, Text, SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
 
-export default function SignUp() {
+export default function SignUp({ navigation }) {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={style.ScrollView}>
@@ -57,7 +57,7 @@ export default function SignUp() {
                         placeholderTextColor="#003f5c"
                     />
                 </View>
-                <TouchableOpacity style={style.signupBtn}>
+                <TouchableOpacity onPress={() => navigation.navigate('SignIn')} style={style.signupBtn}>
                     <Text style={style.signupText}>SIGN UP </Text>
                 </TouchableOpacity>
             </ScrollView>
